@@ -1,7 +1,9 @@
 name: Build and Scan Voting App Images
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - feature/sysdig-build-scan
 
 jobs:
   build-and-scan:
